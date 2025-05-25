@@ -19,16 +19,16 @@ export default function Home() {
       <section className="container mx-auto px-4 pt-20 pb-32 relative z-10">
         <div className="max-w-4xl mx-auto text-center">
           <ScrollAnimation direction="fade" delay={200}>
-            <Badge variant="secondary" className="mb-6 px-4 py-2 text-sm animate-pulse">
-              <Sparkles className="w-4 h-4 mr-2" />
-              Welcome to our platform
+            <Badge variant="secondary" className="mb-6 px-4 py-2 text-sm animate-bounce hover:animate-pulse transition-all duration-300 hover:scale-105 cursor-pointer">
+              <Sparkles className="w-4 h-4 mr-2 animate-spin" />
+              ✨ New Features Just Dropped - Experience the Magic!
             </Badge>
           </ScrollAnimation>
           
           <ScrollAnimation direction="up" delay={400}>
-            <h1 className="text-5xl font-bold tracking-tight lg:text-7xl bg-gradient-to-r from-gray-900 via-blue-600 to-purple-600 bg-clip-text text-transparent animate-gradient">
-              Build Something
-              <span className="block text-transparent bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text">Amazing Today</span>
+            <h1 className="text-5xl font-bold tracking-tight lg:text-7xl bg-gradient-to-r from-gray-900 via-blue-600 to-purple-600 bg-clip-text text-transparent animate-gradient hover:scale-105 transition-transform duration-500 cursor-default">
+              Build Your Dreams
+              <span className="block text-transparent bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text">Into Reality</span>
             </h1>
           </ScrollAnimation>
           
@@ -85,33 +85,37 @@ export default function Home() {
               </Card>
             </ScrollAnimation>
 
-            <Card className="group hover:shadow-lg transition-all duration-300 hover:-translate-y-1 border-0 shadow-md">
-              <CardHeader>
-                <div className="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center mb-4 group-hover:bg-green-200 transition-colors">
-                  <Shield className="h-6 w-6 text-green-600" />
-                </div>
-                <CardTitle className="text-xl">Secure & Reliable</CardTitle>
-              </CardHeader>
-              <CardContent>
-                <p className="text-muted-foreground">
-                  Enterprise-grade security with 99.9% uptime guarantee.
-                </p>
-              </CardContent>
-            </Card>
+            <ScrollAnimation direction="up" delay={500}>
+              <Card className="group hover:shadow-2xl transition-all duration-500 hover:-translate-y-2 hover:rotate-1 border-0 shadow-md bg-gradient-to-br from-white to-green-50/50 backdrop-blur-sm">
+                <CardHeader>
+                  <div className="w-12 h-12 bg-gradient-to-r from-green-500 to-green-600 rounded-lg flex items-center justify-center mb-4 group-hover:scale-110 transition-all duration-300 shadow-lg">
+                    <Shield className="h-6 w-6 text-white" />
+                  </div>
+                  <CardTitle className="text-xl">Secure & Reliable</CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <p className="text-muted-foreground">
+                    Enterprise-grade security with 99.9% uptime guarantee.
+                  </p>
+                </CardContent>
+              </Card>
+            </ScrollAnimation>
 
-            <Card className="group hover:shadow-lg transition-all duration-300 hover:-translate-y-1 border-0 shadow-md">
-              <CardHeader>
-                <div className="w-12 h-12 bg-purple-100 rounded-lg flex items-center justify-center mb-4 group-hover:bg-purple-200 transition-colors">
-                  <Users className="h-6 w-6 text-purple-600" />
-                </div>
-                <CardTitle className="text-xl">Team Collaboration</CardTitle>
-              </CardHeader>
-              <CardContent>
-                <p className="text-muted-foreground">
-                  Work together seamlessly with powerful collaboration tools.
-                </p>
-              </CardContent>
-            </Card>
+            <ScrollAnimation direction="up" delay={600}>
+              <Card className="group hover:shadow-2xl transition-all duration-500 hover:-translate-y-2 hover:rotate-1 border-0 shadow-md bg-gradient-to-br from-white to-purple-50/50 backdrop-blur-sm">
+                <CardHeader>
+                  <div className="w-12 h-12 bg-gradient-to-r from-purple-500 to-purple-600 rounded-lg flex items-center justify-center mb-4 group-hover:scale-110 transition-all duration-300 shadow-lg">
+                    <Users className="h-6 w-6 text-white" />
+                  </div>
+                  <CardTitle className="text-xl">Team Collaboration</CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <p className="text-muted-foreground">
+                    Work together seamlessly with powerful collaboration tools.
+                  </p>
+                </CardContent>
+              </Card>
+            </ScrollAnimation>
           </div>
         </div>
       </section>
@@ -179,42 +183,41 @@ export default function Home() {
       </section>
 
       {/* CTA Section */}
-      <section className="container mx-auto px-4 py-32">
+      <section className="container mx-auto px-4 py-32 relative z-10">
         <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-3xl font-bold tracking-tight lg:text-4xl mb-6">
-            Ready to Get Started?
-          </h2>
-          <p className="text-xl text-muted-foreground mb-10 max-w-2xl mx-auto">
-            Join thousands of satisfied customers and start your journey today.
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button size="lg" className="group px-8 py-6 text-lg">
-              Start Free Trial
-              <ArrowRight className="ml-2 h-5 w-5 transition-transform group-hover:translate-x-1" />
-            </Button>
-            <Button variant="outline" size="lg" className="px-8 py-6 text-lg">
-              Contact Sales
-            </Button>
-          </div>
-          <div className="mt-8 flex items-center justify-center gap-1 text-sm text-muted-foreground">
-            <Star className="h-4 w-4 fill-yellow-400 text-yellow-400" />
-            <Star className="h-4 w-4 fill-yellow-400 text-yellow-400" />
-            <Star className="h-4 w-4 fill-yellow-400 text-yellow-400" />
-            <Star className="h-4 w-4 fill-yellow-400 text-yellow-400" />
-            <Star className="h-4 w-4 fill-yellow-400 text-yellow-400" />
-            <span className="ml-2">Rated 5/5 by 1000+ customers</span>
-          </div>
+          <ScrollAnimation direction="up" delay={200}>
+            <h2 className="text-3xl font-bold tracking-tight lg:text-4xl mb-6 bg-gradient-to-r from-gray-900 to-gray-600 bg-clip-text text-transparent">
+              Ready to Get Started?
+            </h2>
+            <p className="text-xl text-muted-foreground mb-10 max-w-2xl mx-auto">
+              Join thousands of satisfied customers and start your journey today.
+            </p>
+          </ScrollAnimation>
+          
+          <ScrollAnimation direction="up" delay={400}>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              <Button size="lg" className="group px-8 py-6 text-lg bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 transform hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl">
+                Start Free Trial
+                <ArrowRight className="ml-2 h-5 w-5 transition-transform group-hover:translate-x-1" />
+              </Button>
+              <Button variant="outline" size="lg" className="px-8 py-6 text-lg hover:bg-gradient-to-r hover:from-blue-50 hover:to-purple-50 transform hover:scale-105 transition-all duration-300">
+                Contact Sales
+              </Button>
+            </div>
+          </ScrollAnimation>
+          
+          <ScrollAnimation direction="up" delay={600}>
+            <div className="mt-8 flex items-center justify-center gap-1 text-sm text-muted-foreground">
+              <Star className="h-4 w-4 fill-yellow-400 text-yellow-400" />
+              <Star className="h-4 w-4 fill-yellow-400 text-yellow-400" />
+              <Star className="h-4 w-4 fill-yellow-400 text-yellow-400" />
+              <Star className="h-4 w-4 fill-yellow-400 text-yellow-400" />
+              <Star className="h-4 w-4 fill-yellow-400 text-yellow-400" />
+              <span className="ml-2">Rated 5/5 by 1000+ customers</span>
+            </div>
+          </ScrollAnimation>
         </div>
       </section>
     </div>
   )
 }
-
-
-
-
-
-
-
-
-
