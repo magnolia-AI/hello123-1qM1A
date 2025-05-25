@@ -19,9 +19,9 @@ export default function Home() {
       <section className="container mx-auto px-4 pt-20 pb-32 relative z-10">
         <div className="max-w-4xl mx-auto text-center">
           <ScrollAnimation direction="fade" delay={200}>
-            <Badge variant="secondary" className="mb-6 px-4 py-2 text-sm animate-pulse">
-              <Sparkles className="w-4 h-4 mr-2" />
-              🚀 Now live - Join the revolution
+            <Badge variant="secondary" className="mb-6 px-4 py-2 text-sm animate-bounce hover:animate-pulse transition-all duration-300 hover:scale-105 cursor-pointer">
+              <Sparkles className="w-4 h-4 mr-2 animate-spin" />
+              ✨ New Features Just Dropped - Experience the Magic!
             </Badge>
           </ScrollAnimation>
           
