@@ -4,8 +4,8 @@ import { Toaster } from "@/components/ui/toaster"
 import { ThemeProvider } from '@/components/theme-provider'
 
 export const metadata: Metadata = {
-  title: 'Next.js Template',
-  description: 'A customizable template built with Next.js and Tailwind CSS',
+  title: 'Build Something Amazing Today',
+  description: 'Transform your ideas into reality with our powerful platform. Join thousands of creators building the future.',
   icons: {
     icon: '/favicon.ico',
   },
