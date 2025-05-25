@@ -11,12 +11,12 @@ export default function Home() {
       {/* Hero Section */}
       <section className="container mx-auto px-4 pt-20 pb-32">
         <div className="max-w-4xl mx-auto text-center">
-          <Badge variant="secondary" className="mb-6 px-4 py-2 text-sm">
-            ✨ Welcome to our platform
+          <Badge variant="secondary" className="mb-6 px-4 py-2 text-sm animate-pulse">
+            🚀 Now live - Join the revolution
           </Badge>
           <h1 className="text-5xl font-bold tracking-tight lg:text-7xl bg-gradient-to-r from-gray-900 to-gray-600 bg-clip-text text-transparent">
-            Build Something
-            <span className="block text-blue-600">Amazing Today</span>
+            Create Something
+            <span className="block text-blue-600">Extraordinary Today</span>
           </h1>
           <p className="mt-8 text-xl text-muted-foreground max-w-2xl mx-auto leading-relaxed">
             Transform your ideas into reality with our powerful platform. 
@@ -167,5 +167,7 @@ export default function Home() {
     </div>
   )
 }
+
+
 
 
