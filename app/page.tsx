@@ -2,7 +2,8 @@
 import { Button } from '@/components/ui/button'
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
 import { Badge } from '@/components/ui/badge'
-import { ArrowRight, Star, Zap, Shield, Users } from 'lucide-react'
+import { ArrowRight, Star, Zap, Shield, Users, Gamepad2 } from 'lucide-react'
+import ClickDotGame from '@/components/click-dot-game'
 
 export default function Home() {
   return (
@@ -91,6 +92,24 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Game Section */}
+      <section className="bg-gradient-to-br from-purple-50 to-blue-50 py-20">
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto text-center mb-12">
+            <div className="w-16 h-16 bg-gradient-to-r from-purple-600 to-blue-600 rounded-full flex items-center justify-center mx-auto mb-6">
+              <Gamepad2 className="h-8 w-8 text-white" />
+            </div>
+            <h2 className="text-3xl font-bold tracking-tight lg:text-4xl mb-4">
+              Take a Quick Break!
+            </h2>
+            <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
+              Test your reflexes with our addictive dot-clicking game. How many can you catch in 30 seconds?
+            </p>
+          </div>
+          <ClickDotGame />
+        </div>
+      </section>
+
       {/* Stats Section */}
       <section className="bg-gray-50 py-20">
         <div className="container mx-auto px-4">
@@ -148,3 +167,5 @@ export default function Home() {
     </div>
   )
 }
+
+
